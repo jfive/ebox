@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>br.com.jfive.ebox</groupId>
+        <artifactId>ebox</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>br.com.jfive.ebox.ear</groupId>
+    <artifactId>ebox-ear</artifactId>
+    <packaging>ear</packaging>
+
+    <name>ebox-ear</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>br.com.jfive.ebox.web</groupId>
+            <artifactId>ebox-web</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>deploy</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.jboss.as.plugins</groupId>
+                        <artifactId>jboss-as-maven-plugin</artifactId>
+                        <version>7.3.Final</version>
+                        <executions>
+                            <execution>
+                                <id>jboss-as</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>deploy</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <version>6</version>
+                    <modules>
+                        <!-- javaModule>
+                            <groupId>br.com.ebox.</groupId>
+                            <artifactId>ebox-core-model</artifactId>
+                            <includeInApplicationXml>true</includeInApplicationXml>
+                        </javaModule -->
+                        <!-- ejbModule>
+                            <groupId>br.com.ebox.core.negocio</groupId>
+                            <artifactId>ebox-core-negocio</artifactId>
+                        </ejbModule -->
+                        <webModule>
+                            <groupId>br.com.jfive.ebox.web</groupId>
+                            <artifactId>ebox-web</artifactId>
+                            <contextRoot>/ebox</contextRoot>
+                        </webModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
