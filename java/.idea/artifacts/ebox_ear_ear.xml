@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="ear" name="ebox-ear:ear">
-    <output-path>$PROJECT_DIR$/ebox-ear/target</output-path>
-    <root id="archive" name="ebox-ear-1.0-SNAPSHOT.ear">
-      <element id="artifact" artifact-name="ebox-ear:ear exploded" />
-    </root>
-  </artifact>
-</component>

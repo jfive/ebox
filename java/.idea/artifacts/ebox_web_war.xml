@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ebox-web:war">
-    <output-path>$PROJECT_DIR$/ebox-web/target</output-path>
-    <root id="archive" name="ebox-web-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="ebox-web:war exploded" />
-    </root>
-  </artifact>
-</component>
