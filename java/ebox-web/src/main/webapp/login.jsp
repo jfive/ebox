@@ -29,7 +29,6 @@
     <![endif]-->
 </head>
 <body>
-
     <!-- background switcher -->
     <div class="bg-switch visible-desktop">
         <div class="bgs">
