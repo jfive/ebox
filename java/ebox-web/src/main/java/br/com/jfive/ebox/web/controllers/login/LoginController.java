@@ -17,6 +17,9 @@ public class LoginController {
 
     @Path("/login")
     @Get
-    public void login() {}
+    public void login() {
+        result.forwardTo("/login.jsp");
+
+    }
 
 }
