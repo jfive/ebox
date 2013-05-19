@@ -1,10 +1,5 @@
 <html>
 <head>
-	<title>VRaptor Scaffold Project</title>
+    <meta http-equiv="Refresh" content="0; URL=/ebox/app/index">
 </head>
-<body>
-	It works!!
-
-
-</body>
 </html>
