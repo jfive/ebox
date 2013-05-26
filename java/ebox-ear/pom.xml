@@ -25,6 +25,24 @@
             <version>${project.version}</version>
             <type>war</type>
         </dependency>
+        <dependency>
+            <groupId>br.com.jfive.ebox.model</groupId>
+            <artifactId>ebox-model</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>br.com.jfive.ebox.service</groupId>
+            <artifactId>ebox-service</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>br.com.jfive.ebox.repository</groupId>
+            <artifactId>ebox-repository</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
+        </dependency>
 
     </dependencies>
 
@@ -61,15 +79,19 @@
                 <configuration>
                     <version>6</version>
                     <modules>
-                        <!-- javaModule>
-                            <groupId>br.com.ebox.</groupId>
-                            <artifactId>ebox-core-model</artifactId>
+                        <javaModule>
+                            <groupId>br.com.jfive.ebox.model</groupId>
+                            <artifactId>ebox-model</artifactId>
                             <includeInApplicationXml>true</includeInApplicationXml>
-                        </javaModule -->
-                        <!-- ejbModule>
-                            <groupId>br.com.ebox.core.negocio</groupId>
-                            <artifactId>ebox-core-negocio</artifactId>
-                        </ejbModule -->
+                        </javaModule>
+                        <ejbModule>
+                            <groupId>br.com.jfive.ebox.service</groupId>
+                            <artifactId>ebox-service</artifactId>
+                        </ejbModule>
+                        <ejbModule>
+                            <groupId>br.com.jfive.ebox.repository</groupId>
+                            <artifactId>ebox-repository</artifactId>
+                        </ejbModule>
                         <webModule>
                             <groupId>br.com.jfive.ebox.web</groupId>
                             <artifactId>ebox-web</artifactId>
