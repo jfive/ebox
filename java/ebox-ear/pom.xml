@@ -30,7 +30,6 @@
             <artifactId>ebox-model</artifactId>
             <version>${project.version}</version>
         </dependency>
-
         <dependency>
             <groupId>br.com.jfive.ebox.service</groupId>
             <artifactId>ebox-service</artifactId>
@@ -41,7 +40,6 @@
             <groupId>br.com.jfive.ebox.repository</groupId>
             <artifactId>ebox-repository</artifactId>
             <version>${project.version}</version>
-            <type>ejb</type>
         </dependency>
 
     </dependencies>
@@ -88,10 +86,10 @@
                             <groupId>br.com.jfive.ebox.service</groupId>
                             <artifactId>ebox-service</artifactId>
                         </ejbModule>
-                        <ejbModule>
+                        <javaModule>
                             <groupId>br.com.jfive.ebox.repository</groupId>
                             <artifactId>ebox-repository</artifactId>
-                        </ejbModule>
+                        </javaModule>
                         <webModule>
                             <groupId>br.com.jfive.ebox.web</groupId>
                             <artifactId>ebox-web</artifactId>

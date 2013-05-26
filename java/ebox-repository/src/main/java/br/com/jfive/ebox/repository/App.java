@@ -1,14 +1,12 @@
 package br.com.jfive.ebox.repository;
 
-import javax.ejb.LocalBean;
-import javax.ejb.Stateless;
+import javax.enterprise.inject.Model;
 
 /**
  * Hello world!
  *
  */
-@Stateless
-@LocalBean
-public class App 
+@Model
+public class App
 {
 }
