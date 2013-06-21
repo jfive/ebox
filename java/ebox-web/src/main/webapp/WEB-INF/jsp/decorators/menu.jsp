@@ -1,71 +1,88 @@
 <!-- sidebar -->
-<div id="sidebar-nav" class="hidden-phone">
+<div id="sidebar-nav">
     <ul id="dashboard-menu">
-        <li class="" id="home">
-            <a class="tab1" href="<c:url value='/index'/>">
-                <i class="sidebar-home"></i>
+        <li id="home">
+            <a href="<c:url value='/app/index'/>">
+                <i class="icon-home"></i>
                 <span>Home</span>
             </a>
         </li>
-        <li class="" id="chart">
-            <a class="tab2" href="<c:url value='/chart'/>">
-                <i class="sidebar-charts"></i>
+        <li id="chart">
+            <a href="<c:url value='/chart'/>">
+                <i class="icon-signal"></i>
                 <span>Charts</span>
             </a>
         </li>
-        <li class="">
-            <a class="tab2" href="<c:url value='user-list.html'/>">
+        <li>
+            <a class="dropdown-toggle" href="#">
                 <i class="icon-group"></i>
                 <span>Users</span>
+                <i class="icon-chevron-down"></i>
             </a>
+            <ul class="submenu">
+                <li><a href="user-list.html">User list</a></li>
+                <li><a href="new-user.html">New user form</a></li>
+                <li><a href="user-profile.html">User profile</a></li>
+            </ul>
         </li>
-        <li class="">
-            <a class="tab3" href="<c:url value='form-showcase.html'/>">
-                <i class="sidebar-forms"></i>
+        <li>
+            <a class="dropdown-toggle" href="#">
+                <i class="icon-edit"></i>
                 <span>Forms</span>
+                <i class="icon-chevron-down"></i>
             </a>
+            <ul class="submenu">
+                <li><a href="form-showcase.html">Form showcase</a></li>
+                <li><a href="form-wizard.html">Form wizard</a></li>
+            </ul>
         </li>
-        <li class="">
-            <a class="tab4" href="<c:url value='gallery.html'/>">
-                <i class="sidebar-gallery"></i>
+        <li>
+            <a href="gallery.html">
+                <i class="icon-picture"></i>
                 <span>Gallery</span>
             </a>
         </li>
-        <li class="">
-            <a class="tab5" href="<c:url value='icons.html'/>">
-                <i class="sidebar-widgets"></i>
-                <span>Icons</span>
-            </a>
-        </li>
-        <li class="">
-            <a class="tab6" href="<c:url value='calendar.html'/>">
-                <i class="sidebar-calendar"></i>
+        <li>
+            <a href="calendar.html">
+                <i class="icon-calendar-empty"></i>
                 <span>Calendar</span>
             </a>
         </li>
-        <li class="">
-            <a class="tab7" href="<c:url value='tables.html'/>">
-                <i class="sidebar-tables"></i>
+        <li>
+            <a href="tables.html">
+                <i class="icon-th-large"></i>
                 <span>Tables</span>
             </a>
         </li>
-        <li class="">
-            <a class="tab8" href="<c:url value='ui-elements.html'/>">
-                <i class="sidebar-ui"></i>
+        <li>
+            <a class="dropdown-toggle ui-elements" href="#">
+                <i class="icon-code-fork"></i>
                 <span>UI Elements</span>
+                <i class="icon-chevron-down"></i>
             </a>
+            <ul class="submenu">
+                <li><a href="ui-elements.html">UI Elements</a></li>
+                <li><a href="icons.html">Icons</a></li>
+            </ul>
         </li>
-        <li class="">
-            <a class="tab9" href="<c:url value='personal-info.html'/>">
-                <i class="sidebar-gear"></i>
+        <li>
+            <a href="personal-info.html">
+                <i class="icon-cog"></i>
                 <span>My Info</span>
             </a>
         </li>
-        <li class="">
-            <a class="tab10" href="<c:url value='signin.html'/>">
-                <i class="sidebar-logout"></i>
-                <span>Login page</span>
+        <li>
+            <a class="dropdown-toggle" href="#">
+                <i class="icon-share-alt"></i>
+                <span>Extras</span>
+                <i class="icon-chevron-down"></i>
             </a>
+            <ul class="submenu">
+                <li><a href="code-editor.html">Code editor</a></li>
+                <li><a href="grids.html">Grids</a></li>
+                <li><a href="signin.html">Sign in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+            </ul>
         </li>
     </ul>
 </div>
