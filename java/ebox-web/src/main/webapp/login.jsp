@@ -66,11 +66,7 @@
                     <h6>Log in</h6>
                     <input class="span12" type="text" name="j_username" placeholder="E-mail address">
                     <input class="span12" type="password" name="j_password" placeholder="Your password">
-                    <a href="#" class="forgot">Forgot password?</a>
-                    <div class="remember">
-                        <input id="remember-me" type="checkbox" name="rememberme" value="true">
-                        <label for="remember-me">Remember me</label>
-                    </div>
+                    <a href="<c:url value="/login/recuperar"/>" class="forgot">Recuperar login/senha?</a>
                     <input class="btn-glow primary login" type="submit" value="Log in"/>
                 </div>
             </div>

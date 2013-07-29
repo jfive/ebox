@@ -11,8 +11,6 @@ import br.com.jfive.ebox.web.annotations.Category;
 import javax.servlet.http.HttpServletRequest;
 
 
-@Intercepts
-@RequestScoped
 public class MenuInterceptor implements Interceptor {
 
     private final HttpServletRequest request;
@@ -29,10 +27,10 @@ public class MenuInterceptor implements Interceptor {
                           Object resourceInstance) throws InterceptionException {
 
         // Utilizado para setar o menu que o usuário está
-        Category category = resourceInstance.getClass().getAnnotation(Category.class);
+        /*Category category = resourceInstance.getClass().getAnnotation(Category.class);
         if(category != null && category.value() != null){
             this.request.setAttribute("menu", category.value());
-        }
+        }*/
 
         stack.next(method, resourceInstance); // continua a execução
     }
