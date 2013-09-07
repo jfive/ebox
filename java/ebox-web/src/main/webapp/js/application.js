@@ -1,6 +1,7 @@
 $(function(){
 
     var menu = $(menuActive);
+    var menuSub = $(menuActive + ">.submenu");
 
     menu.append("<div class='pointer'>" +
         "  <div class='arrow'></div>" +
@@ -8,5 +9,6 @@ $(function(){
         "</div>");
 
     menu.addClass("active");
+    menuSub.css("display","block");
 
 })

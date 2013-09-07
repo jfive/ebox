@@ -59,7 +59,8 @@
     <!-- scripts -->
 
     <script>
-        var menuActive = '#${menu}';
+        //var menuActive = '#${menu}';
+        var menuActive="#config";
     </script>
 
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/application.js"></script>
