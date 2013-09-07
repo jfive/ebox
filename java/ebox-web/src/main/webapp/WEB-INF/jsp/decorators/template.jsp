@@ -60,7 +60,7 @@
 
     <script>
         //var menuActive = '#${menu}';
-        var menuActive="#config";
+        var menuActive="#home";
     </script>
 
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/application.js"></script>
