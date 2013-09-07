@@ -59,8 +59,10 @@
     <!-- scripts -->
 
     <script>
+        <!-- Arrumar o active pois o interceptor ainda não funciona -->
         //var menuActive = '#${menu}';
         var menuActive="#home";
+
     </script>
 
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/application.js"></script>
